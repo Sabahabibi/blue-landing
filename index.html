@@ -5,17 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href=""> خدمات </a>
-        <a href=""> وام</a>
-        <a href="">بلو جونیور</a>
-        <a href="">تماس با ما</a>
-        <a href="">سوالات متداول</a>
+    <!-- blue header -->
+    <header class="flex justify-between items-center shadow-md px-20 py-4">
+      <img class="w-18 h-14" src="./assets/blu.svg" alt="blue-logo" />
+      <nav class="flex gap-10">
+        <a class="text-md hover:text-blue-500 transition-colors" href=""
+          >خدمات</a
+        >
+        <a class="text-md hover:text-blue-500 transition-colors" href="">وام</a>
+        <a class="text-md hover:text-blue-500 transition-colors" href=""
+          >بلو جونیور</a
+        >
+        <a class="text-md hover:text-blue-500 transition-colors" href=""
+          >تماس با ما</a
+        >
+        <a class="text-md hover:text-blue-500 transition-colors" href=""
+          >سوالات متداول</a
+        >
       </nav>
+      <button
+        class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+      >
+        دانلود و نصب بلو
+      </button>
     </header>
+    <main>
+      <!-- download app section -->
+      <div class="flex flex-col items-center gap-10 px-18 py-20">
+        <p class="font-bold text-5xl .text-blue-900">
+          <span class="text-blue-500">،بلو</span> بانک ولی دوست داشتنی!
+        </p>
+        <p class="text-center">
+          بلو، پلتفرمی تمام دیجیتال است که همه ی عملیات بانکداری با اپلیکیشن بلو
+          و کاملا آنلاین انجام می شود .
+        </p>
+        <button
+          class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          دانلود اپلیکیشن
+        </button>
+      </div>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
